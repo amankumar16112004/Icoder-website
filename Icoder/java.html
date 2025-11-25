@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Java Notes — iCoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span class="dot"></span> iCoder</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="topics.html" class="nav-link">Topics</a>
+      <a href="java.html" class="nav-link">Java</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <img src="https://msbtenotes-info.netlify.app/resourse/blog-resourse/advanced-java-notes.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1280px; height: 200px; margin: 0px; width: 350px;" alt="Advanced Java (J2EE) Handwritten Notes for MSBTE K-Scheme | Free PDF  Download" jsname="kn3ccd">
+   
+
+    <h1>Java — Core Concepts</h1>
+    <p>Short notes to get started with Java. Practice each example and build small apps.</p>
+
+    <h2>1. OOP Concepts</h2>
+    <p><b>Class, Object, Inheritance, Polymorphism, Abstraction, Encapsulation.</b></p>
+    <pre>
+class Student {
+  String name;
+  void show() { System.out.println(name); }
+}
+    </pre>
+
+    <h2>2. Collections Framework</h2>
+    <ul>
+      <li>List — ArrayList, LinkedList</li>
+      <li>Set — HashSet, TreeSet</li>
+      <li>Map — HashMap, TreeMap</li>
+      <li>Queue — PriorityQueue</li>
+    </ul>
+    <pre>
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");
+System.out.println(list);
+    </pre>
+
+    <h2>3. Exception Handling</h2>
+    <p>Try, Catch, Finally, Throw, Throws — prevents program from crashing.</p>
+    <pre>
+try {
+   int x = 10 / 0;
+} catch (Exception e) {
+   System.out.println("Error: " + e);
+}
+    </pre>
+
+    <h2>4. Multithreading</h2>
+    <p>Thread class, Runnable interface, synchronization.</p>
+    <pre>
+class MyThread extends Thread {
+  public void run() {
+    System.out.println("Thread running...");
+  }
+}
+    </pre>
+
+    <h2>5. File Handling</h2>
+    <p>Read / write files using File, FileWriter, Scanner.</p>
+    <pre>
+FileWriter fw = new FileWriter("abc.txt");
+fw.write("Hello Java");
+fw.close();
+    </pre>
+
+    <h2>6. JDBC (Database Connection)</h2>
+    <p>Used to connect Java program with database — MySQL, Oracle, etc.</p>
+    <pre>
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection(url, user, pass);
+    </pre>
+
+    <h2>7. Java Important Features</h2>
+    <ul>
+      <li>Platform Independent</li>
+      <li>Simple & Secure</li>
+      <li>High Performance</li>
+      <li>Robust & Portable</li>
+      <li>Object Oriented</li>
+    </ul>
+
+    <br>
+    <a href="topics.html" class="btn">Back to Topics</a>
+  </main>
+
+  <footer>© 2025 iCoder</footer>
+</body>
+</html>

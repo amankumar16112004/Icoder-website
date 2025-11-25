@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Python Notes — iCoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span class="dot"></span> iCoder</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="topics.html" class="nav-link">Topics</a>
+      <a href="python.html" class="nav-link">Python</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <img src="https://topperworld.in/media/2022/11/Python-handwritten-notes.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1080px; height: 327px; margin: 0px; width: 300px;" alt="Python Handwritten Notes - topperworld" jsname="kn3ccd">
+     
+
+    <h1>Python — Quick Notes</h1>
+    <p>Python basics, data libraries, OOP, functions, and beginner projects.</p>
+
+    <h2>1. Basics</h2>
+    <p>Variables, loops, functions, conditional statements & modules.</p>
+    <pre>
+# variables + function
+name = "John"
+def show():
+    print(name)
+show()
+    </pre>
+
+    <h2>2. Data Structures</h2>
+    <ul>
+      <li>List</li>
+      <li>Tuple</li>
+      <li>Dictionary</li>
+      <li>Set</li>
+    </ul>
+    <pre>
+numbers = [10, 20, 30]
+student = {"name": "Rahul", "age": 21}
+print(student["name"])
+    </pre>
+
+    <h2>3. Python OOP</h2>
+    <p>Class, Object, Constructor, Inheritance, Polymorphism.</p>
+    <pre>
+class Student:
+  def __init__(self, name):
+    self.name = name
+    
+  def show(self):
+    print(self.name)
+s = Student("Raj")
+s.show()
+    </pre>
+
+    <h2>4. Popular Libraries</h2>
+    <ul>
+      <li><b>NumPy</b> → numerical computing</li>
+      <li><b>Pandas</b> → data analysis</li>
+      <li><b>Matplotlib</b> → visualization</li>
+      <li><b>Seaborn</b> → statistical visualization</li>
+      <li><b>Requests</b> → API calls</li>
+    </ul>
+
+    <h2>5. File Handling</h2>
+    <pre>
+f = open("data.txt", "w")
+f.write("Hello Python")
+f.close()
+    </pre>
+
+    <h2>6. Exception Handling</h2>
+    <pre>
+try:
+    a = 10 / 0
+except Exception as e:
+    print("Error:", e)
+    </pre>
+
+    <h2>7. Flask & Web Development</h2>
+    <p>Python can create websites using Flask / Django.</p>
+    <pre>
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello World"
+app.run()
+    </pre>
+
+    <h2>8. Machine Learning Roadmap</h2>
+    <ul>
+      <li>NumPy & Pandas</li>
+      <li>Matplotlib & Seaborn</li>
+      <li>Scikit-Learn</li>
+      <li>TensorFlow / PyTorch</li>
+    </ul>
+
+    <h2>🔥 Small Python Projects for Practice</h2>
+    <ul>
+      <li>Calculator</li>
+      <li>To-Do List App</li>
+      <li>Weather App using API</li>
+      <li>Face Detection using OpenCV</li>
+    </ul>
+
+    <br>
+    <a href="topics.html" class="btn">Back to Topics</a>
+  </main>
+
+  <footer>© 2025 iCoder</footer>
+</body>
+</html>

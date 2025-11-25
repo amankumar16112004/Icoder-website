@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — iCoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span class="dot"></span> iCoder</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="topics.html" class="nav-link">Topics</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <h1>Contact Us</h1>
+    <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
+      <form id="contactForm" style="flex:1; min-width:280px;">
+        <div class="form-row">
+          <input class="input" name="name" placeholder="Your name" />
+          <input class="input" name="email" placeholder="Your email" />
+        </div>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <div style="margin-top:12px;">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+
+      <div style="width:360px; min-width:260px;">
+        <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=60" alt="contact" style="width:100%; border-radius:8px">
+        <p style="color:var(--muted); margin-top:8px;">Prefer email? hello@icoder.example (demo)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 iCoder</footer>
+  <script src="script.js"></script>
+</body>
+</html>
